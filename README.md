@@ -1,5 +1,5 @@
 Projeto Bevi para Teste da entrevista
-Projeto iniciado com Vite mais infomações react-vite.readme.md
+Projeto iniciado com Vite
 
 ## Pré-requisitos
 
