@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.spectral-extralight {
+  font-family: 'Spectral', serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.spectral-light {
+  font-family: 'Spectral', serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.spectral-regular {
+  font-family: 'Spectral', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.spectral-medium {
+  font-family: 'Spectral', serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.spectral-semibold {
+  font-family: 'Spectral', serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.spectral-bold {
+  font-family: 'Spectral', serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.spectral-extrabold {
+  font-family: 'Spectral', serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.spectral-extralight-italic {
+  font-family: 'Spectral', serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.spectral-light-italic {
+  font-family: 'Spectral', serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.spectral-regular-italic {
+  font-family: 'Spectral', serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.spectral-medium-italic {
+  font-family: 'Spectral', serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.spectral-semibold-italic {
+  font-family: 'Spectral', serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.spectral-bold-italic {
+  font-family: 'Spectral', serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.spectral-extrabold-italic {
+  font-family: 'Spectral', serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+@layer components {
+  .container {
+    @apply max-w-5xl px-8 py-4;
+  }
+
+  @keyframes slideFromLeft {
+    from {
+      transform: translateX(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .anime-left {
+    @apply opacity-0 -translate-x-5 animate-[slideFromLeft_0.3s_ease-out_forwards];
+  }
+
+  .user-nav {
+    @apply bg-gray-200 rounded-sm h-10 w-10 flex items-center place-content-center border border-transparent  transition-all duration-200 cursor-pointer hover:bg-gray-300 hover:shadow-lg hover:shadow-blue-200 hover:border-blue-800;
+  }
+}
